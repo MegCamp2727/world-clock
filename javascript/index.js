@@ -19,6 +19,15 @@ let sydneyTime = moment().tz("Australia/Sydney");
 sydneyDateElement.innerHTML = sydneyTime.format("MMMM Do YYYY");
 sydneyTimeElement.innerHTML = sydneyTime.format("h:mm:ss [<small>]A[</small>]");
  
+//Cairo
+let cairoElement = document.querySelector("#cairo");
+let cairoDateElement = cairoElement.querySelector(".date");
+let cairoTimeElement = cairoElement.querySelector(".time");
+let cairoTime = moment().tz("Africa/Cairo");
+
+cairoDateElement.innerHTML = cairoTime.format("MMMM Do YYYY");
+cairoTimeElement.innerHTML = cairoTime.format("h:mm:ss [<small>]A[</small>]");
+ 
 
 }
 
